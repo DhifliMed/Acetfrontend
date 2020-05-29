@@ -1,0 +1,36 @@
+<div class="main-div theme-blue {{currentTheme}}" [ngClass]="{'theme-dark':darkLayout,'right_icon_toggle':!rightSidebarVisible}">
+
+
+  <div class="overlay" [ngClass]="{'d-block':settingsVisible,'d-none':!settingsVisible}" (click)="toggleSetting()"></div>
+
+  <!-- Main Search -->
+  <div id="search" [ngClass]="{'open':searchVisible}">
+    <button id="close" type="button" class="close btn btn-primary btn-icon btn-icon-mini btn-round" (click)="hideSearch()">x</button>
+    <form>
+      <input type="search" value="" placeholder="Search...">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
+
+  <!-- Right Icon menu Sidebar -->
+  <app-right-sidebar></app-right-sidebar>
+
+  <!-- Left Sidebar -->
+  <app-left-sidebar></app-left-sidebar>
+
+
+  <section class="content dash-content">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-lg-7 col-md-6 col-sm-12">
+          <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+          <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </section>
+
+</div>

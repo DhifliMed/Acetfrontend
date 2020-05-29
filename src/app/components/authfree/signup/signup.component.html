@@ -1,0 +1,75 @@
+<div class="authentication">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <form class="card auth_form" (ngSubmit)="signup()">
+          <div class="header">
+            <img class="logo" src="assets/images/logoh.png" alt="AMITACT">
+            <h4>Sign Up</h4>
+            <div>
+              <a routerLink="/" waves-teal class="btn bg-warning waves-teal" >Back <i class="zmdi zmdi-home"></i> </a>
+            </div>
+          </div>
+          <div class="body">
+            <div class="input-group mb-3">
+              <input type="text" [(ngModel)]="authparams.username" name="username" class="form-control" placeholder="Username">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="zmdi zmdi-account-circle"></i></span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" [(ngModel)]="authparams.first_name" name="username" class="form-control" placeholder="Username">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="zmdi zmdi-account-circle"></i></span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" [(ngModel)]="authparams.last_name" name="username" class="form-control" placeholder="Username">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="zmdi zmdi-account-circle"></i></span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" [(ngModel)]="authparams.email" name="email" class="form-control" placeholder="E-mail">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="zmdi zmdi-email"></i></span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" [(ngModel)]="authparams.phone" name="phone" class="form-control" placeholder="Phone">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="zmdi zmdi-phone"></i></span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <input type="password" [(ngModel)]="authparams.password" name="password" class="form-control" placeholder="Password">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="zmdi zmdi-lock"></i></span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <input type="password" [(ngModel)]="authparams.confirmpassword" name="confirmpassword" class="form-control" placeholder="Confirm Password">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="zmdi zmdi-assignment-check"></i></span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-block waves-effect waves-light text-white">SIGN Up</button>
+            <div>
+              <label class="small-text">
+                You Forget Your Password ? <a routerLink="/lostpasswd">Recover Account</a></label>
+            </div>
+            <div>
+              <label class="small-text">
+                You Already Have An Account ? <a routerLink="/login">SignIn</a></label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-8 col-sm-12">
+        <div class="card">
+          <img src="assets/images/signup.svg" alt="Sign In"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

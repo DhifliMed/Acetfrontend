@@ -1,0 +1,58 @@
+<aside id="leftsidebar" class="sidebar">
+  <div class="navbar-brand">
+    <button class="btn-menu ls-toggle-btn" type="button" (click)="toggleSmallMenu()"><i class="zmdi zmdi-menu"></i>
+    </button>
+    <a routerLink="/my">
+      <img src="/assets/images/logoh.png" width="50" alt="AMITACT"><span class="m-l-10">AMITACT</span>
+    </a>
+  </div>
+  <div class="menu">
+    <ul class="list">
+      <li>
+        <div class="user-info">
+          <a class="image waves-effect waves-block waves-teal" href="profile.html"><img src="/assets/images/logo1.svg"
+                                                                                        alt="User"></a>
+          <div class="detail">
+            <h4>Amitact</h4>
+            <small>Super Admin</small>
+          </div>
+        </div>
+      </li>
+
+      <li><a routerLink="/my" class="waves-effect waves-block waves-teal"><i
+        class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+      <li><a routerLink="/my/profile" class=" waves-effect waves-block waves-teal"><i
+        class="zmdi zmdi-account"></i><span>Profile</span></a></li>
+      <li><a routerLink="/my/teams" class="waves-effect waves-block waves-teal"><i
+        class="zmdi zmdi-accounts"></i><span>Team</span></a></li>
+      <li><a routerLink="/my/contracts" class="waves-effect waves-block waves-teal"><i
+        class="zmdi zmdi-assignment-account"></i><span>Contracts</span></a></li>
+
+      <li><a href="javascript:void(0);" class="menu-toggle waves-effect waves-block waves-teal" [ngClass]="{'toggled' : checkactivemenu('projects')}"
+             (click)="openItem('projects')"><i
+        class="zmdi zmdi-laptop" ></i><span>Projects</span></a>
+        <ul class="ml-menu" [ngClass]="{'d-block' : checkactivemenu('projects')}">
+          <li><a routerLink="/my/projects" class=" waves-effect waves-block waves-teal">Projects</a></li>
+          <li><a routerLink="/my/projects/boards" class=" waves-effect waves-block waves-teal">Boards</a></li>
+          <li><a routerLink="/my/projects/current-tasks" class=" waves-effect waves-block waves-teal">Current Tasks</a></li>
+          <li><a routerLink="/my/projects/calendar" class=" waves-effect waves-block waves-teal">Calendar</a></li>
+        </ul>
+
+      <li><a href="javascript:void(0);" class="menu-toggle waves-effect waves-block waves-teal" [ngClass]="{'toggled' : checkactivemenu('timetracker')}"
+             (click)="openItem('timetracker')"><i
+        class="zmdi zmdi-time-countdown"></i><span>Time Tracker</span></a>
+        <ul class="ml-menu"  [ngClass]="{'d-block' : checkactivemenu('timetracker')}">
+          <li><a routerLink="/my/timetrack" class=" waves-effect waves-block waves-teal">Tracker</a></li>
+          <li><a routerLink="/my/timetrack/efficiency" class=" waves-effect waves-block waves-teal">Efficiency</a></li>
+          <li><a routerLink="/my/timetrack/reports" class=" waves-effect waves-block waves-teal">Reports</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="/my/invoicing" class="waves-effect waves-block waves-teal"><i
+        class="zmdi zmdi-assignment"></i><span>Invoicing</span></a></li>
+      <li><a routerLink="/my/settings" class="waves-effect waves-block waves-teal"><i
+        class="zmdi zmdi-settings"></i><span>Setting</span></a></li>
+      <li class="d-md-none"><a routerLink="/logout" class="waves-effect waves-block waves-teal"><i
+        class="zmdi zmdi-power"></i><span>Logout</span></a></li>
+    </ul>
+  </div>
+</aside>

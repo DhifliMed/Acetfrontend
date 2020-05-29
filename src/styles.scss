@@ -1,0 +1,38 @@
+@import 'src/assets/scss/main.scss';
+@import 'src/assets/scss/skins/blue.scss';
+@import 'src/assets/scss/skins/orange.scss';
+@import 'src/assets/scss/skins/dark.scss';
+
+
+.theme-blue #leftsidebar .menu .list {
+  margin: 0 0;
+
+  li {
+    a:hover:not(.image) {
+      color: white;
+      background: #46b6fe;
+      border-radius: 0px 10px 10px 0px;
+      transition: all .7s;
+    }
+  }
+}
+
+.theme-orange #leftsidebar .menu .list {
+  margin: 0 0;
+
+  li {
+    a:hover:not(.image) {
+      color: white;
+      background: #FF9948;
+      border-radius: 0px 10px 10px 0px;
+      transition: all .7s;
+    }
+  }
+}
+
+.theme-dark {
+  #leftsidebar {
+      background: $dark !important;
+  }
+}
+

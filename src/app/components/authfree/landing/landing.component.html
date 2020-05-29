@@ -1,0 +1,512 @@
+<link href="https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/zimed-icon.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/jquery.bxslider.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/magnific-popup.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+
+<div class="lpc" style="display: none">
+  <div class="page-wrapper">
+    <header class="main-nav__header-one ">
+      <nav class="header-navigation fixed-top" id="main-nav">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="main-nav__logo-box">
+            <a routerLink="/" class="main-nav__logo">
+              <h3><span>ACET</span></h3>
+            </a>
+            <span href="" class="side-menu__toggler"><i class="fa fa-bars" (click)="togglesidemenu()"></i></span>
+          </div><!-- /.logo-box -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="main-nav__main-navigation">
+            <ul class="one-page-scroll-menu main-nav__navigation-box">
+              <li class="current scrollToLink">
+                <a pageScroll href="#banner">ACET</a>
+              </li>
+              <li class="scrollToLink">
+                <a pageScroll href="#features">Features</a>
+              </li>
+              <li class="scrollToLink">
+                <a pageScroll href="#pricing">Pricing</a>
+              </li>
+              <li class="scrollToLink">
+                <a pageScroll href="#app-shots">App Screens</a>
+              </li>
+              <li class="scrollToLink">
+                <a pageScroll href="#contact">Contact us</a>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+          <div class="main-nav__right">
+            <a routerLink="/login" class="thm-btn header__btn scroll-to-target">My Account</a>
+            <!-- /.thm-btn header__btn -->
+          </div><!-- /.main-nav__right -->
+        </div>
+        <!-- /.container -->
+      </nav>
+    </header><!-- /.main-nav__header-one -->
+
+    <section class="banner-one" id="banner" style="background-image: url(assets/images/background/banner-bg-1-1.png);">
+      <img src="assets/images/shapes/banner-shapes-1-1.png" alt="" class="banner-one__shape-1">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="banner-one__content">
+
+              <h3>ACET helps achieve <b>BIGGER</b> goals</h3>
+              <p>ACET (Amitact Efficiency tracker) Powered by <a class="text-white" href="https://amitact.com"><b>Amitact</b></a></p>
+              <a routerLink="/login" data-target="#contact" class="thm-btn banner-one__btn scroll-to-target">Register
+                Now</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div>
+              <br>
+              <h3 class="text-center text-white">Powered BY</h3>
+            </div>
+            <img src="assets/images/logoh.png" class="banner-logo" alt="" width="350">
+            <h2 class="text-center text-black banner-logo-alt">AMITACT</h2>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.banner-one -->
+
+    <section class="service-one" id="features">
+      <div class="container">
+        <div class="block-title text-center">
+          <span class="block-title__bubbles"></span>
+          <p>Checkout ACET Features</p>
+          <h3>The Only Service You’ll Need </h3>
+          <h3>To Manage Your Project !</h3>
+        </div><!-- /.block-title -->
+        <div class="row">
+          <div class="service-one__col wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="000ms">
+            <div class="service-one__single">
+              <i class="zimed-icon-responsive"></i>
+              <h3>ACET Scrum board</h3>
+            </div>
+          </div>
+          <div class="service-one__col wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+            <div class="service-one__single">
+              <i class="zimed-icon-computer-graphic"></i>
+              <h3>Easy To use</h3>
+            </div>
+          </div>
+          <div class="service-one__col wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+            <div class="service-one__single">
+              <i class="zimed-icon-development1"></i>
+              <h3>Manage Teams</h3>
+            </div>
+          </div>
+          <div class="service-one__col wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+            <div class="service-one__single">
+              <i class="zimed-icon-development"></i>
+              <h3>Time tracking</h3>
+            </div>
+          </div>
+          <div class="service-one__col wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+            <div class="service-one__single">
+              <i class="zimed-icon-development"></i>
+              <h3>Invoicing</h3>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section><!-- /.service-one -->
+
+    <div class="cta-three">
+
+      <img src="assets/images/shapes/cta-1-shape-2.png" alt="" class="cta-three__shape-2">
+      <div class="container">
+        <img src="assets/images/shapes/cta-1-shape-1.png" alt="" class="cta-three__shape-1">
+        <img src="assets/images/mocs/cta-moc-1-1.png" alt="" class="cta-three__moc">
+        <div class="row justify-content-end">
+          <div class="col-lg-6">
+            <div class="cta-three__content">
+              <div class="block-title text-left">
+                <span class="block-title__bubbles"></span>
+                <p>Checkout Service Features</p>
+                <h3>Control Everything From One Service</h3>
+              </div><!-- /.block-title -->
+              <div class="cta-three__box-wrap">
+                <div class="cta-three__box">
+                  <div class="cta-three__box-icon">
+                    <i class="zimed-icon-strategy"></i>
+                  </div><!-- /.cta-three__box-icon -->
+                  <div class="cta-three__box-content">
+                    <h3>Dashboard</h3>
+                    <p>ACET gives you a powerfull dashboard to check your project progress with details of sprints,
+                      tasks
+                      in real time and get notified when your offline</p>
+                  </div><!-- /.cta-three__box-content -->
+                </div><!-- /.cta-three__box -->
+                <div class="cta-three__box">
+                  <div class="cta-three__box-icon">
+                    <i class="zimed-icon-training"></i>
+                  </div><!-- /.cta-three__box-icon -->
+                  <div class="cta-three__box-content">
+                    <h3>ACET TEAMS</h3>
+                    <p>We provice a full team management system, where you can control contracts, payment tracking, and
+                      efficiency calculator </p>
+                  </div><!-- /.cta-three__box-content -->
+
+                </div><!-- /.cta-three__box -->
+              </div><!-- /.cta-three__box-wrap -->
+              <a href="#" class="thm-btn cta-three__btn">Discover More</a><!-- /.thm-btn cta-three__btn -->
+            </div><!-- /.cta-three__content -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.cta-three -->
+
+
+    <section class="pricing-one" id="pricing">
+      <div class="container">
+        <img src="assets/images/shapes/contact-shape-2.png" alt="" class="app-shot__shape-2">
+        <div class="pricing-one__sep"></div>
+        <div class="block-title text-center">
+          <span class="block-title__bubbles"></span>
+          <h3>Choose Pricing Plans</h3>
+        </div>
+        <div class="tabed-content">
+          <div id="month">
+            <div class="row">
+              <div class="col-lg-4 wow fadeInLeft" data-wow-duration="1500ms">
+                <div class="pricing-one__single">
+                  <div class="pricing-one__inner">
+                    <img src="assets/images/shapes/pricing-line-1-1.png" alt="" class="pricing-one__line">
+                    <img src="assets/images/shapes/pricing-icon-1-1.png" alt="" class="pricing-one__icon">
+                    <h3>Basic Pack</h3>
+                    <p>$20.00/Month</p>
+                    <ul class="list-unstyled pricing-one__list">
+                      <li><i class="fa fa-check"></i> Basic Options</li>
+                      <li><i class="fa fa-check"></i> Auto-renew Options</li>
+                      <li><i class="fa fa-check"></i> Upgrade options</li>
+                      <li><i class="fa fa-check"></i> In App support</li>
+                      <li><i class="fa fa-check"></i> Scrum Board</li>
+                      <li><i class="fa fa-check"></i> Illimited projects </li>
+                      <li><i class="fa fa-check"></i> 5 users </li>
+                      <li><i class="fa fa-check"></i> 1 Team </li>
+                    </ul>
+                    <a href="/signup" class="thm-btn pricing-one__btn">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
+                <div class="pricing-one__single">
+                  <div class="pricing-one__inner">
+                    <img src="assets/images/shapes/pricing-line-1-1.png" alt="" class="pricing-one__line">
+                    <img src="assets/images/shapes/pricing-icon-1-2.png" alt="" class="pricing-one__icon">
+                    <h3>Pro Pack</h3>
+                    <p>$30.00/Month</p>
+                    <ul class="list-unstyled pricing-one__list">
+                      <li><i class="fa fa-check"></i> Leader features</li>
+                      <li><i class="fa fa-check"></i> Auto-renew Options</li>
+                      <li><i class="fa fa-check"></i> Upgrade options</li>
+                      <li><i class="fa fa-check"></i> In App support</li>
+                      <li><i class="fa fa-check"></i> Invoicing & Contracts</li>
+                      <li><i class="fa fa-check"></i> Illimited projects </li>
+                      <li><i class="fa fa-check"></i> 15 users </li>
+                      <li><i class="fa fa-check"></i> 3 Teams </li>
+                    </ul>
+                    <a href="/signup" class="thm-btn pricing-one__btn">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 wow fadeInRight" data-wow-duration="1500ms">
+                <div class="pricing-one__single">
+                  <div class="pricing-one__inner">
+                    <img src="assets/images/shapes/pricing-line-1-1.png" alt="" class="pricing-one__line">
+                    <img src="assets/images/shapes/pricing-icon-1-3.png" alt="" class="pricing-one__icon">
+                    <h3>Ultimate Pack</h3>
+                    <p>$50.00/Month</p>
+                    <ul class="list-unstyled pricing-one__list">
+                      <li><i class="fa fa-check"></i> Full features</li>
+                      <li><i class="fa fa-check"></i> Auto-renew Options</li>
+                      <li><i class="fa fa-check"></i> Upgrade options</li>
+                      <li><i class="fa fa-check"></i> Direct Messages Support</li>
+                      <li><i class="fa fa-check"></i> Dashboard & statistics </li>
+                      <li><i class="fa fa-check"></i> Illimited projects </li>
+                      <li><i class="fa fa-check"></i> 50 users </li>
+                      <li><i class="fa fa-check"></i> 10 Teams </li>
+                    </ul><!-- /.list-unstyled pricing-one__list -->
+                    <a href="/signup" class="thm-btn pricing-one__btn">Get Started</a>
+                  </div><!-- /.pricing-one__inner -->
+                </div><!-- /.pricing-one__single -->
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+          </div><!-- /#month -->
+        </div><!-- /.tabed-content -->
+
+      </div><!-- /.container -->
+    </section><!-- /.pricing-one -->
+
+    <section class="app-shot-one" id="app-shots">
+
+      <div class="container-fluid">
+        <div class="block-title text-center">
+          <span class="block-title__bubbles"></span>
+          <h3>ACET Screenshots</h3>
+        </div><!-- /.block-title -->
+        <div class="app-shot-one__carousel thm__owl-carousel owl-theme owl-carousel"
+             data-options='{ "loop": true, "margin": 43, "nav": false, "dots": true, "autoWidth": false, "autoplay": true, "smartSpeed": 700, "autoplayTimeout": 5000, "autoplayHoverPause": true, "slideBy": 5, "responsive": { "0": { "items": 1 }, "480": { "items": 2 }, "600": { "items": 3 }, "991": { "items": 4 }, "1000": { "items": 5 }, "1200": { "items": 5 } } }'>
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-1.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-2.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-3.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-4.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-5.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-1.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-2.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-3.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-4.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-5.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-1.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-2.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-3.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-4.jpg" alt="">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="assets/images/app-shots/app-shot-1-5.jpg" alt="">
+          </div><!-- /.item -->
+        </div><!-- /.app-shot-one__carousel owl-theme owl-carousel -->
+      </div><!-- /.container-fluid -->
+    </section><!-- /.app-shot-one -->
+
+    <section class="contact-one" id="contact">
+      <img src="assets/images/shapes/contact-shape-1.png" alt="" class="contact-one__shape-1">
+      <img src="assets/images/shapes/contact-shape-2.png" alt="" class="contact-one__shape-2">
+      <img src="assets/images/shapes/contact-shape-3.png" alt="" class="contact-one__shape-3">
+      <div class="container">
+        <div class="block-title text-center">
+          <span class="block-title__bubbles"></span>
+          <h3 class=" text-center">Contact us</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-one__content">
+              <div class="contact-one__images">
+                <img src="assets/images/logoh.png" class="wow fadeInUp ctlogoimg" data-wow-duration="1500ms" alt="" height="150">
+              </div><!-- /.contact-one__images -->
+              <div class="contact-one__infos">
+                <div class="contact-one__infos-single">
+                  <div class="contact-one__infos-icon">
+                    <i class="zimed-icon-placeholder"></i>
+                  </div><!-- /.contact-one__infos-icon -->
+                  <div class="contact-one__infos-content">
+                    <h3>Addresss</h3>
+                    <p>Monastir. Tunisia </p>
+                  </div><!-- /.contact-one__infos-content -->
+                </div><!-- /.contact-one__infos-single -->
+                <div class="contact-one__infos-single">
+                  <div class="contact-one__infos-icon">
+                    <i class="zimed-icon-message"></i>
+                  </div><!-- /.contact-one__infos-icon -->
+                  <div class="contact-one__infos-content">
+                    <h3>Email</h3>
+                    <p><a href="mailto:acet@amitact.com">acet@amitact.com</a></p>
+                  </div><!-- /.contact-one__infos-content -->
+                </div><!-- /.contact-one__infos-single -->
+                <div class="contact-one__infos-single">
+                  <div class="contact-one__infos-icon">
+                    <i class="zimed-icon-phone-call"></i>
+                  </div><!-- /.contact-one__infos-icon -->
+                  <div class="contact-one__infos-content">
+                    <h3>Phone</h3>
+                    <p><a href="tel:0021655417465">+21655417465</a></p>
+                  </div><!-- /.contact-one__infos-content -->
+                </div><!-- /.contact-one__infos-single -->
+              </div><!-- /.contact-one__infos -->
+            </div><!-- /.contact-one__content -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-lg-6">
+            <div class="contact-one__form-wrap">
+              <div class="block-title">
+                <span class="block-title__bubbles"></span>
+                <p>We Will Be Pleased To Know Your Opinion & Questions </p>
+                <h3>Write Us A Message</h3>
+              </div><!-- /.block-title -->
+              <form  class="contact-form-validated contact-one__form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" name="name" placeholder="Name" required>
+                  </div><!-- /.col-md-6 -->
+                  <div class="col-md-6">
+                    <input type="text" name="email" placeholder="Email" required>
+                  </div><!-- /.col-md-6 -->
+                  <div class="col-md-12">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                  </div><!-- /.col-md-6 -->
+                  <div class="col-md-12">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="thm-btn contact-one__form-btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+              <div class="result"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-one">
+      <div class="container">
+        <div class="cta-one__circle-1"></div>
+        <div class="cta-one__circle-2"></div>
+        <div class="cta-one__circle-3"></div>
+        <div class="cta-one__content text-center">
+          <h3>Signup Today & <br> Boost Your Projects' Efficiency</h3>
+          <a routerLink="/signup" class="thm-btn cta-one__btn">Signup</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <img src="assets/images/shapes/footer-shape-1.png" class="site-footer__shape-1" alt="">
+      <img src="assets/images/shapes/footer-shape-3.png" class="site-footer__shape-3" alt="">
+      <div class="site-footer__upper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="footer-widget footer-widget__about">
+                <a class="footer-widget__logo" href="https://amitact.com"><img src="assets/images/logoh.png" width="105"
+                                                                      alt="AMITACT"/></a>
+
+                <p>Monastir, Tunisia <br/> <a href="mailto:needhelp@zimed.com">acet@amitact.com</a> <br/> <a href="tel:0021655417465">+21655417465</a></p>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="footer-widget footer-widget__links">
+                <h3 class="footer-widget__title">Explore</h3>
+                <div class="footer-widget__links-wrap">
+                  <ul class="list-unstyled">
+                    <li><a href="https://amitact.com">About AMITACT</a></li>
+                    <li><a routerLink="/about">About ACET</a></li>
+                  </ul><!-- /.list-unstyled -->
+                  <ul class="list-unstyled">
+                    <li >
+                      <a pageScroll href="#banner">Top</a>
+                    </li>
+                    <li >
+                      <a pageScroll href="#features">Features</a>
+                    </li>
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li >
+                      <a pageScroll href="#pricing">Pricing</a>
+                    </li>
+                    <li >
+                      <a pageScroll href="#app-shots">App Screens</a>
+                    </li>
+                    <li >
+                      <a pageScroll href="#contact">Contact us</a>
+                    </li>
+                  </ul><!-- /.list-unstyled -->
+                </div><!-- /.footer-widget__links-wrap -->
+              </div><!-- /.footer-widget footer-widget__links -->
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.site-footer__upper -->
+      <div class="site-footer__bottom">
+        <div class="container">
+          <div class="inner-container">
+            <div class="site-footer__social">
+              <a class="fab fa-facebook-f" href="#"></a>
+              <a class="fab fa-twitter" href="#"></a>
+              <a class="fab fa-instagram" href="#"></a>
+            </div><!-- /.site-footer__social -->
+          </div><!-- /.inner-container -->
+        </div><!-- /.container -->
+      </div><!-- /.site-footer__bottom -->
+    </footer><!-- /.site-footer -->
+
+  </div><!-- /.page-wrapper -->
+  <a pageScroll href="#banner" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+  <div class="side-menu__block">
+
+
+    <div class="side-menu__block-overlay custom-cursor__overlay" (click)="hidesidemenu()">
+      <div class="cursor-follower"></div>
+    </div>
+    <div class="side-menu__block-inner ">
+      <div class="side-menu__top justify-content-end">
+
+        <a href="#" class="side-menu__toggler side-menu__close-btn" (click)="hidesidemenu()"><img src="assets/images/shapes/close-1-1.png"
+                                                                         alt=""></a>
+      </div><!-- /.side-menu__top -->
+
+
+      <nav class="mobile-nav__container">
+        <ul class="one-page-scroll-menu main-nav__navigation-box">
+          <ul class="one-page-scroll-menu main-nav__navigation-box">
+            <li class="current scrollToLink">
+              <a pageScroll href="#banner" (click)="hidesidemenu()">ACET</a>
+            </li>
+            <li class="scrollToLink">
+              <a pageScroll href="#features" (click)="hidesidemenu()">Features</a>
+            </li>
+            <li class="scrollToLink">
+              <a pageScroll href="#pricing" (click)="hidesidemenu()">Pricing</a>
+            </li>
+            <li class="scrollToLink">
+              <a pageScroll href="#app-shots" (click)="hidesidemenu()">App Screens</a>
+            </li>
+            <li class="scrollToLink">
+              <a pageScroll href="#contact" (click)="hidesidemenu()">Contact us</a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+      <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+      <div class="side-menu__content">
+        <p>
+          <a routerLink="/login" class="thm-btn scroll-to-target side_btn text-white">My Account</a>
+        </p>
+        <div class="side-menu__social">
+          <a class="fab fa-facebook-f" href="#"></a>
+          <a class="fab fa-twitter" href="#"></a>
+          <a class="fab fa-instagram" href="#"></a>
+        </div>
+      </div><!-- /.side-menu__content -->
+    </div><!-- /.side-menu__block-inner -->
+  </div><!-- /.side-menu__block -->
+
+</div>
